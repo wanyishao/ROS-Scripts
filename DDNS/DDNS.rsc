@@ -1,10 +1,11 @@
 # ==========================================
 # Cloudflare DDNS 统一脚本
+# IPv6 DDNS基于Firewall IPv6 Address List中List字段，不懂可以问问ai
 # 支持：
 # 1. 公网 IPv4 -> Cloudflare A 记录
-# 2. 下游设备 IPv6 Address-List -> Cloudflare AAAA 记录
+# 2. 指定 Address-List 仅更新 IPv6 前缀，用于防火墙放行
 # 3. 路由器自身 IPv6 自动写入 routeros Address-List
-# 4. 指定 Address-List 仅更新 IPv6 前缀，用于防火墙放行
+# 4. 路由器自身和下游设备 IPv6 Address-List -> Cloudflare AAAA 记录
 # ==========================================
 
 
