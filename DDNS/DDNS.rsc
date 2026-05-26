@@ -347,6 +347,7 @@
         } on-error={
             :log error "DDNS: 更新 $rName A 记录失败，请检查 API Token、Zone ID、网络或 Cloudflare 记录"
         }
+        :delay 1s
     }
 }
 
@@ -421,6 +422,7 @@
                 } on-error={
                     :log error "IPv6_DDNS: 更新设备 [$lName] $rName AAAA 记录失败，请检查 API Token、Zone ID、网络或 Cloudflare 记录"
                 }
+                :delay 1s
             }
 
         } else={
