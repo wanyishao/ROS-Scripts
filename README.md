@@ -1,4 +1,4 @@
-RouterOS (ROS) 实用脚本集合，包含功能强大的 Cloudflare DDNS 脚本和轻量级的 vnStat 接口流量统计脚本。
+RouterOS (ROS) 实用脚本集合，包含 Cloudflare DDNS 脚本和轻量级的 vnStat 接口流量统计脚本。
 
 ## 目录
 - [1. Cloudflare DDNS 统一脚本](#1-cloudflare-ddns-统一脚本)
