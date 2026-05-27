@@ -1,0 +1,48 @@
+name: Generate RouterOS Address Lists
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    # 每周一 20:00 UTC 运行
+    # 北京时间为每周二 04:00
+    - cron: "0 20 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      - name: Generate RouterOS RSC
+        run: |
+          python3 scripts/generate_ros_address_lists.py
+
+      - name: Show generated file info
+        run: |
+          ls -lh dist/
+          wc -l dist/*.rsc
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add dist/*.rsc
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update RouterOS address lists"
+            git push
+          fi
