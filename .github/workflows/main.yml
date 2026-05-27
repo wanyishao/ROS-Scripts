@@ -26,19 +26,19 @@ jobs:
 
       - name: Generate RouterOS RSC
         run: |
-          python3 scripts/generate_ros_address_lists.py
+          python3 ./IP-TXT2RSC/scripts/generate_ros_address_lists.py
 
       - name: Show generated file info
         run: |
-          ls -lh dist/
-          wc -l dist/*.rsc
+          ls -lh ./IP-TXT2RSC/dist/
+          wc -l ./IP-TXT2RSC/dist/*.rsc
 
       - name: Commit generated files
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git add dist/*.rsc
+          git add ./IP-TXT2RSC/dist/*.rsc
 
           if git diff --cached --quiet; then
             echo "No changes to commit"
