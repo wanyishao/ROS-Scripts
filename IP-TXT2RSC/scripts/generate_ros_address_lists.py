@@ -250,7 +250,7 @@ def generate_rsc_files():
     now = datetime.datetime.utcnow()
     stamp = now.strftime("%Y%m%d%H%M%S")
 
-    dist_dir = Path("dist")
+    dist_dir = Path("IP-TXT2RSC/dist")
     dist_dir.mkdir(parents=True, exist_ok=True)
 
     generated_files = []
