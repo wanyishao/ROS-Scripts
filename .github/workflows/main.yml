@@ -30,15 +30,15 @@ jobs:
 
       - name: Show generated file info
         run: |
-          ls -lh ./IP-TXT2RSC/dist/
-          wc -l ./IP-TXT2RSC/dist/*.rsc
+          ls -lh IP-TXT2RSC/dist/
+          wc -l IP-TXT2RSC/dist/*.rsc
 
       - name: Commit generated files
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git add ./IP-TXT2RSC/dist/*.rsc
+          git add IP-TXT2RSC/dist/*.rsc
 
           if git diff --cached --quiet; then
             echo "No changes to commit"
