@@ -3,17 +3,17 @@
 # List: CN_IPv6
 # Family: ipv6
 # Source: https://ispip.clang.cn/all_cn_ipv6.txt
-# Entries: 1600
-# Tag: github-feed:CN_IPv6:20260527102504
-# Generated at UTC: 2026-05-27T10:25:04.328234Z
+# Entries: 1604
+# Tag: github-feed:CN_IPv6:20260601223256
+# Generated at UTC: 2026-06-01T22:32:56.481944Z
 # ==================================================
 
 :local listName "CN_IPv6"
 :local tmpList "CN_IPv6__tmp"
 :local oldList "CN_IPv6__old"
-:local tag "github-feed:CN_IPv6:20260527102504"
+:local tag "github-feed:CN_IPv6:20260601223256"
 :local tagPrefix "github-feed:CN_IPv6:"
-:local newCount 1600
+:local newCount 1604
 
 :log warning ("Address-List: 开始更新 " . $listName . "，共 " . $newCount . " 条")
 
@@ -1468,6 +1468,9 @@
 /ipv6 firewall address-list add list=$tmpList address="2a0e:aa07:e144::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a0e:aa07:e146::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a0e:aa07:e148::/48" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="2a0e:aa07:e280::/45" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="2a0e:aa07:e288::/46" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="2a0e:aa07:e28e::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a0e:aa07:f0d0::/46" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a0e:aa07:f0d4::/47" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a0e:aa07:f0d8::/48" comment=$tag
@@ -1577,6 +1580,7 @@
 /ipv6 firewall address-list add list=$tmpList address="2a14:67c3:190::/47" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:67c3:1100::/47" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:67c3:6668::/45" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="2a14:67c3:9990::/44" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7580:740::/44" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7580:d00::/43" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7580:d20::/46" comment=$tag
