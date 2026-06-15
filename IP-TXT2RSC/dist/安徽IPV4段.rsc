@@ -3,17 +3,17 @@
 # List: 安徽IPV4段
 # Family: ipv4
 # Source: https://metowolf.github.io/iplist/data/cncity/340000.txt
-# Entries: 297
-# Tag: github-feed:安徽IPV4段:20260608214910
-# Generated at UTC: 2026-06-08T21:49:10.236126Z
+# Entries: 298
+# Tag: github-feed:安徽IPV4段:20260615221756
+# Generated at UTC: 2026-06-15T22:17:56.788279Z
 # ==================================================
 
 :local listName "安徽IPV4段"
 :local tmpList "安徽IPV4段__tmp"
 :local oldList "安徽IPV4段__old"
-:local tag "github-feed:安徽IPV4段:20260608214910"
+:local tag "github-feed:安徽IPV4段:20260615221756"
 :local tagPrefix "github-feed:安徽IPV4段:"
-:local newCount 297
+:local newCount 298
 
 :log warning ("Address-List: 开始更新 " . $listName . "，共 " . $newCount . " 条")
 
@@ -187,6 +187,7 @@
 /ip firewall address-list add list=$tmpList address="112.34.126.0/23" comment=$tag
 /ip firewall address-list add list=$tmpList address="112.34.128.0/17" comment=$tag
 /ip firewall address-list add list=$tmpList address="112.53.227.0/24" comment=$tag
+/ip firewall address-list add list=$tmpList address="112.53.228.0/23" comment=$tag
 /ip firewall address-list add list=$tmpList address="112.53.231.0/24" comment=$tag
 /ip firewall address-list add list=$tmpList address="112.53.232.0/22" comment=$tag
 /ip firewall address-list add list=$tmpList address="112.53.236.0/23" comment=$tag

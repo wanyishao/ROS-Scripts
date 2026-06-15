@@ -3,17 +3,17 @@
 # List: 内蒙古IPV4段
 # Family: ipv4
 # Source: https://metowolf.github.io/iplist/data/cncity/150000.txt
-# Entries: 366
-# Tag: github-feed:内蒙古IPV4段:20260608214910
-# Generated at UTC: 2026-06-08T21:49:10.236126Z
+# Entries: 368
+# Tag: github-feed:内蒙古IPV4段:20260615221756
+# Generated at UTC: 2026-06-15T22:17:56.788279Z
 # ==================================================
 
 :local listName "内蒙古IPV4段"
 :local tmpList "内蒙古IPV4段__tmp"
 :local oldList "内蒙古IPV4段__old"
-:local tag "github-feed:内蒙古IPV4段:20260608214910"
+:local tag "github-feed:内蒙古IPV4段:20260615221756"
 :local tagPrefix "github-feed:内蒙古IPV4段:"
-:local newCount 366
+:local newCount 368
 
 :log warning ("Address-List: 开始更新 " . $listName . "，共 " . $newCount . " 条")
 
@@ -265,7 +265,8 @@
 /ip firewall address-list add list=$tmpList address="116.204.184.0/23" comment=$tag
 /ip firewall address-list add list=$tmpList address="116.204.187.0/24" comment=$tag
 /ip firewall address-list add list=$tmpList address="116.205.40.0/24" comment=$tag
-/ip firewall address-list add list=$tmpList address="116.205.42.0/24" comment=$tag
+/ip firewall address-list add list=$tmpList address="116.205.42.0/23" comment=$tag
+/ip firewall address-list add list=$tmpList address="116.205.44.0/22" comment=$tag
 /ip firewall address-list add list=$tmpList address="117.49.35.0/31" comment=$tag
 /ip firewall address-list add list=$tmpList address="117.49.35.4/30" comment=$tag
 /ip firewall address-list add list=$tmpList address="117.49.35.8/30" comment=$tag
@@ -367,6 +368,7 @@
 /ip firewall address-list add list=$tmpList address="218.30.178.0/24" comment=$tag
 /ip firewall address-list add list=$tmpList address="218.202.64.0/18" comment=$tag
 /ip firewall address-list add list=$tmpList address="218.202.128.0/20" comment=$tag
+/ip firewall address-list add list=$tmpList address="218.207.224.0/24" comment=$tag
 /ip firewall address-list add list=$tmpList address="219.147.96.0/19" comment=$tag
 /ip firewall address-list add list=$tmpList address="219.148.160.0/19" comment=$tag
 /ip firewall address-list add list=$tmpList address="219.159.0.0/18" comment=$tag
