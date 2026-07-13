@@ -4,14 +4,14 @@
 # Family: ipv4
 # Source: https://metowolf.github.io/iplist/data/cncity/150000.txt
 # Entries: 376
-# Tag: github-feed:内蒙古IPV4段:20260706212807
-# Generated at UTC: 2026-07-06T21:28:07.667030Z
+# Tag: github-feed:内蒙古IPV4段:20260713205542
+# Generated at UTC: 2026-07-13T20:55:42.219295Z
 # ==================================================
 
 :local listName "内蒙古IPV4段"
 :local tmpList "内蒙古IPV4段__tmp"
 :local oldList "内蒙古IPV4段__old"
-:local tag "github-feed:内蒙古IPV4段:20260706212807"
+:local tag "github-feed:内蒙古IPV4段:20260713205542"
 :local tagPrefix "github-feed:内蒙古IPV4段:"
 :local newCount 376
 
