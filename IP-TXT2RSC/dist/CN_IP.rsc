@@ -4,14 +4,14 @@
 # Family: ipv4
 # Source: https://metowolf.github.io/iplist/data/country/CN.txt
 # Entries: 5646
-# Tag: github-feed:CN_IP:20260803210013
-# Generated at UTC: 2026-08-03T21:00:13.194994Z
+# Tag: github-feed:CN_IP:20260810204019
+# Generated at UTC: 2026-08-10T20:40:19.761451Z
 # ==================================================
 
 :local listName "CN_IP"
 :local tmpList "CN_IP__tmp"
 :local oldList "CN_IP__old"
-:local tag "github-feed:CN_IP:20260803210013"
+:local tag "github-feed:CN_IP:20260810204019"
 :local tagPrefix "github-feed:CN_IP:"
 :local newCount 5646
 
