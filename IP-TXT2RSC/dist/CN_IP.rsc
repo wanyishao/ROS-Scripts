@@ -3,17 +3,17 @@
 # List: CN_IP
 # Family: ipv4
 # Source: https://metowolf.github.io/iplist/data/country/CN.txt
-# Entries: 5643
-# Tag: github-feed:CN_IP:20260824202802
-# Generated at UTC: 2026-08-24T20:28:02.431622Z
+# Entries: 5645
+# Tag: github-feed:CN_IP:20260831233706
+# Generated at UTC: 2026-08-31T23:37:06.044883Z
 # ==================================================
 
 :local listName "CN_IP"
 :local tmpList "CN_IP__tmp"
 :local oldList "CN_IP__old"
-:local tag "github-feed:CN_IP:20260824202802"
+:local tag "github-feed:CN_IP:20260831233706"
 :local tagPrefix "github-feed:CN_IP:"
-:local newCount 5643
+:local newCount 5645
 
 :log warning ("Address-List: 开始更新 " . $listName . "，共 " . $newCount . " 条")
 
@@ -961,7 +961,9 @@
 /ip firewall address-list add list=$tmpList address="45.253.160.0/19" comment=$tag
 /ip firewall address-list add list=$tmpList address="45.253.192.0/19" comment=$tag
 /ip firewall address-list add list=$tmpList address="45.253.224.0/20" comment=$tag
-/ip firewall address-list add list=$tmpList address="45.253.240.0/21" comment=$tag
+/ip firewall address-list add list=$tmpList address="45.253.240.0/22" comment=$tag
+/ip firewall address-list add list=$tmpList address="45.253.244.0/23" comment=$tag
+/ip firewall address-list add list=$tmpList address="45.253.247.0/24" comment=$tag
 /ip firewall address-list add list=$tmpList address="45.254.0.0/20" comment=$tag
 /ip firewall address-list add list=$tmpList address="45.254.16.0/21" comment=$tag
 /ip firewall address-list add list=$tmpList address="45.254.28.0/22" comment=$tag
