@@ -57,7 +57,6 @@ RouterOS (ROS) 实用脚本集合，包含 Cloudflare DDNS 脚本和轻量级的
 * **计划任务**：添加 Scheduler，建议 **每 1 分钟** 运行一次：
 ```routeros
 /system script run vnstat_acc
-
 ```
 
 
@@ -68,7 +67,6 @@ RouterOS (ROS) 实用脚本集合，包含 Cloudflare DDNS 脚本和轻量级的
 * **计划任务**：添加 Scheduler，每天 **23:59:50** 运行一次：
 ```routeros
 /system script run vnstat_daily_job
-
 ```
 
 
@@ -80,7 +78,6 @@ RouterOS (ROS) 实用脚本集合，包含 Cloudflare DDNS 脚本和轻量级的
 * **查看报表**：无需添加计划任务。随时在 RouterOS 终端 (New Terminal) 中运行以下命令查看流量报告：
 ```routeros
 /system script run vnstat_report
-
 ```
 
 
