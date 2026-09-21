@@ -3,17 +3,17 @@
 # List: CN_IPv6
 # Family: ipv6
 # Source: https://ispip.clang.cn/all_cn_ipv6.txt
-# Entries: 1650
-# Tag: github-feed:CN_IPv6:20260914225706
-# Generated at UTC: 2026-09-14T22:57:06.472195Z
+# Entries: 1655
+# Tag: github-feed:CN_IPv6:20260921230017
+# Generated at UTC: 2026-09-21T23:00:17.474952Z
 # ==================================================
 
 :local listName "CN_IPv6"
 :local tmpList "CN_IPv6__tmp"
 :local oldList "CN_IPv6__old"
-:local tag "github-feed:CN_IPv6:20260914225706"
+:local tag "github-feed:CN_IPv6:20260921230017"
 :local tagPrefix "github-feed:CN_IPv6:"
-:local newCount 1650
+:local newCount 1655
 
 :log warning ("Address-List: 开始更新 " . $listName . "，共 " . $newCount . " 条")
 
@@ -30,6 +30,7 @@
 # 添加新数据到 tmp list
 /ipv6 firewall address-list add list=$tmpList address="2001:250::/30" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2001:254::/31" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="2001:550:1601::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2001:678:53c::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2001:678:970::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2001:7fa:5::/48" comment=$tag
@@ -44,6 +45,8 @@
 /ipv6 firewall address-list add list=$tmpList address="2001:dc7::/32" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2001:dd8:1::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2001:dd9::/48" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="2001:df1:61c0::/48" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="2001:df5:7800::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2001:df6:40::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2001:4510:400::/40" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2001:4510:1480::/41" comment=$tag
@@ -118,6 +121,7 @@
 /ipv6 firewall address-list add list=$tmpList address="2400:a860:1::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2400:a860:2::/47" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2400:a860:4::/46" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="2400:a860:8::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2400:a980::/29" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2400:ae00:1981::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2400:b200::/32" comment=$tag
@@ -344,7 +348,7 @@
 /ipv6 firewall address-list add list=$tmpList address="2404:2280:123::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2404:2280:125::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2404:2280:126::/47" comment=$tag
-/ipv6 firewall address-list add list=$tmpList address="2404:2280:128::/46" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="2404:2280:128::/47" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2404:2280:12e::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2404:2280:130::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2404:2280:134::/48" comment=$tag
@@ -463,8 +467,7 @@
 /ipv6 firewall address-list add list=$tmpList address="2404:2280:2f1::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2404:2280:2f2::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2404:2280:2f6::/47" comment=$tag
-/ipv6 firewall address-list add list=$tmpList address="2404:2280:2f8::/47" comment=$tag
-/ipv6 firewall address-list add list=$tmpList address="2404:2280:2fb::/48" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="2404:2280:2f8::/46" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2404:2280:2fc::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2404:2280:303::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2404:2280:304::/46" comment=$tag
@@ -560,7 +563,6 @@
 /ipv6 firewall address-list add list=$tmpList address="2406:840:100::/47" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2406:840:103::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2406:840:110::/48" comment=$tag
-/ipv6 firewall address-list add list=$tmpList address="2406:840:180::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2406:840:200::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2406:840:2e0::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2406:840:380::/47" comment=$tag
@@ -602,6 +604,7 @@
 /ipv6 firewall address-list add list=$tmpList address="2406:840:5880::/47" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2406:840:5c00::/47" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2406:840:8100::/40" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="2406:840:9110::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2406:840:9178::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2406:840:9200::/40" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2406:840:9700::/40" comment=$tag
@@ -1419,12 +1422,15 @@
 /ipv6 firewall address-list add list=$tmpList address="240c:c000::/20" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="240d:4000::/21" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="240d:c000:f1e0::/47" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="240d:c000:f1e3::/48" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="240d:c000:f1e4::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="240d:c000:f1ef::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="240e::/20" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2602:f46d:1::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2602:f486:f0::/48" comment=$tag
-/ipv6 firewall address-list add list=$tmpList address="2602:f92a:1300::/48" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="2602:f92a:1300::/47" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2602:f92a:1303::/48" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="2602:f92a:1305::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2602:f92a:1310::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2602:f92a:a460::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2602:f92a:a462::/47" comment=$tag
@@ -1437,6 +1443,7 @@
 /ipv6 firewall address-list add list=$tmpList address="2602:f9f6:402::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2602:f9f6:450::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2602:fa02:36::/48" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="2602:fa02:58::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2602:fa02:d00::/40" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2602:faa8:702::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2602:faa8:708::/47" comment=$tag
@@ -1458,6 +1465,7 @@
 /ipv6 firewall address-list add list=$tmpList address="2605:9d80:9042::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2605:9d80:9071::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2605:9d80:9092::/48" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="2620:57:4004::/47" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2804:1e48:9002::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a04:3e00:1002::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a04:f580:8010::/47" comment=$tag
@@ -1567,13 +1575,15 @@
 /ipv6 firewall address-list add list=$tmpList address="2a0f:1cc5:3222::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a0f:1cc5:3700::/43" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a0f:1cc5:4300::/40" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="2a0f:1cc5:4400::/40" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a0f:1cc5:4508::/45" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a0f:1cc5:4510::/44" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="2a0f:1cc5:4560::/44" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a0f:1cc5:45ff::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a0f:1cc5:4600::/39" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a0f:1cc5:49f0::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a0f:1cc5:57fd::/48" comment=$tag
-/ipv6 firewall address-list add list=$tmpList address="2a0f:1cc5:57fe::/48" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="2a0f:1cc5:57fe::/47" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a0f:1cc6:b110::/47" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a0f:1cc6:b210::/47" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a0f:1cc6:b212::/48" comment=$tag
@@ -1631,7 +1641,6 @@
 /ipv6 firewall address-list add list=$tmpList address="2a14:4980::/29" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:5f00::/29" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:67c1:b500::/40" comment=$tag
-/ipv6 firewall address-list add list=$tmpList address="2a14:67c2:519::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:67c2:520::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:67c3:30::/44" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:67c3:190::/47" comment=$tag
@@ -1641,15 +1650,13 @@
 /ipv6 firewall address-list add list=$tmpList address="2a14:7580:740::/44" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7580:d10::/44" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7580:d20::/46" comment=$tag
-/ipv6 firewall address-list add list=$tmpList address="2a14:7580:ff64::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7580:ffee::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7580:fff3::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7580:fffa::/48" comment=$tag
+/ipv6 firewall address-list add list=$tmpList address="2a14:7581:fe1::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7581:3810::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7581:3814::/48" comment=$tag
-/ipv6 firewall address-list add list=$tmpList address="2a14:7581:3818::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7582:7000::/36" comment=$tag
-/ipv6 firewall address-list add list=$tmpList address="2a14:7583:efe7::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7583:efef::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7583:f411::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7583:f4f0::/48" comment=$tag
@@ -1659,7 +1666,6 @@
 /ipv6 firewall address-list add list=$tmpList address="2a14:7583:f704::/47" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7583:f707::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7583:f708::/47" comment=$tag
-/ipv6 firewall address-list add list=$tmpList address="2a14:7583:f70c::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7583:f743::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7583:f744::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7583:f764::/48" comment=$tag
@@ -1670,7 +1676,6 @@
 /ipv6 firewall address-list add list=$tmpList address="2a14:7586:6110::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7586:6115::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2a14:7586:6300::/44" comment=$tag
-/ipv6 firewall address-list add list=$tmpList address="2a14:ae00:50::/44" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2c0f:f7a8:8011::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2c0f:f7a8:8050::/48" comment=$tag
 /ipv6 firewall address-list add list=$tmpList address="2c0f:f7a8:805f::/48" comment=$tag
