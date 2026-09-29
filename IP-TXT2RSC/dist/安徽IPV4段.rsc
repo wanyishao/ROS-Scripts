@@ -4,14 +4,14 @@
 # Family: ipv4
 # Source: https://metowolf.github.io/iplist/data/cncity/340000.txt
 # Entries: 298
-# Tag: github-feed:安徽IPV4段:20260921230017
-# Generated at UTC: 2026-09-21T23:00:17.474952Z
+# Tag: github-feed:安徽IPV4段:20260929001134
+# Generated at UTC: 2026-09-29T00:11:34.317101Z
 # ==================================================
 
 :local listName "安徽IPV4段"
 :local tmpList "安徽IPV4段__tmp"
 :local oldList "安徽IPV4段__old"
-:local tag "github-feed:安徽IPV4段:20260921230017"
+:local tag "github-feed:安徽IPV4段:20260929001134"
 :local tagPrefix "github-feed:安徽IPV4段:"
 :local newCount 298
 

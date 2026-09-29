@@ -3,17 +3,17 @@
 # List: CN_IP
 # Family: ipv4
 # Source: https://metowolf.github.io/iplist/data/country/CN.txt
-# Entries: 5645
-# Tag: github-feed:CN_IP:20260921230017
-# Generated at UTC: 2026-09-21T23:00:17.474952Z
+# Entries: 5663
+# Tag: github-feed:CN_IP:20260929001134
+# Generated at UTC: 2026-09-29T00:11:34.317101Z
 # ==================================================
 
 :local listName "CN_IP"
 :local tmpList "CN_IP__tmp"
 :local oldList "CN_IP__old"
-:local tag "github-feed:CN_IP:20260921230017"
+:local tag "github-feed:CN_IP:20260929001134"
 :local tagPrefix "github-feed:CN_IP:"
-:local newCount 5645
+:local newCount 5663
 
 :log warning ("Address-List: 开始更新 " . $listName . "，共 " . $newCount . " 条")
 
@@ -497,6 +497,7 @@
 /ip firewall address-list add list=$tmpList address="43.68.0.0/15" comment=$tag
 /ip firewall address-list add list=$tmpList address="43.136.0.0/13" comment=$tag
 /ip firewall address-list add list=$tmpList address="43.144.0.0/15" comment=$tag
+/ip firewall address-list add list=$tmpList address="43.146.0.0/23" comment=$tag
 /ip firewall address-list add list=$tmpList address="43.152.16.0/24" comment=$tag
 /ip firewall address-list add list=$tmpList address="43.152.38.0/23" comment=$tag
 /ip firewall address-list add list=$tmpList address="43.152.46.0/24" comment=$tag
@@ -506,7 +507,23 @@
 /ip firewall address-list add list=$tmpList address="43.164.128.0/18" comment=$tag
 /ip firewall address-list add list=$tmpList address="43.165.0.0/18" comment=$tag
 /ip firewall address-list add list=$tmpList address="43.165.192.0/18" comment=$tag
-/ip firewall address-list add list=$tmpList address="43.170.0.0/15" comment=$tag
+/ip firewall address-list add list=$tmpList address="43.168.28.0/22" comment=$tag
+/ip firewall address-list add list=$tmpList address="43.168.84.0/24" comment=$tag
+/ip firewall address-list add list=$tmpList address="43.168.197.0/24" comment=$tag
+/ip firewall address-list add list=$tmpList address="43.168.198.0/23" comment=$tag
+/ip firewall address-list add list=$tmpList address="43.168.200.0/22" comment=$tag
+/ip firewall address-list add list=$tmpList address="43.168.207.0/24" comment=$tag
+/ip firewall address-list add list=$tmpList address="43.168.212.0/22" comment=$tag
+/ip firewall address-list add list=$tmpList address="43.168.216.0/23" comment=$tag
+/ip firewall address-list add list=$tmpList address="43.168.227.0/24" comment=$tag
+/ip firewall address-list add list=$tmpList address="43.168.228.0/22" comment=$tag
+/ip firewall address-list add list=$tmpList address="43.168.232.0/21" comment=$tag
+/ip firewall address-list add list=$tmpList address="43.168.240.0/20" comment=$tag
+/ip firewall address-list add list=$tmpList address="43.170.0.0/19" comment=$tag
+/ip firewall address-list add list=$tmpList address="43.170.48.0/20" comment=$tag
+/ip firewall address-list add list=$tmpList address="43.170.64.0/18" comment=$tag
+/ip firewall address-list add list=$tmpList address="43.170.128.0/17" comment=$tag
+/ip firewall address-list add list=$tmpList address="43.171.0.0/16" comment=$tag
 /ip firewall address-list add list=$tmpList address="43.176.0.0/12" comment=$tag
 /ip firewall address-list add list=$tmpList address="43.192.0.0/16" comment=$tag
 /ip firewall address-list add list=$tmpList address="43.193.0.0/18" comment=$tag
@@ -5579,6 +5596,7 @@
 /ip firewall address-list add list=$tmpList address="222.126.178.0/23" comment=$tag
 /ip firewall address-list add list=$tmpList address="222.126.180.0/22" comment=$tag
 /ip firewall address-list add list=$tmpList address="222.126.184.0/22" comment=$tag
+/ip firewall address-list add list=$tmpList address="222.126.188.0/24" comment=$tag
 /ip firewall address-list add list=$tmpList address="222.126.190.0/23" comment=$tag
 /ip firewall address-list add list=$tmpList address="222.126.192.0/21" comment=$tag
 /ip firewall address-list add list=$tmpList address="222.126.200.16/29" comment=$tag
