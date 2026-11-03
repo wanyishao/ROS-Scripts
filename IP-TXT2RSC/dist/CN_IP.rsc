@@ -3,17 +3,17 @@
 # List: CN_IP
 # Family: ipv4
 # Source: https://metowolf.github.io/iplist/data/country/CN.txt
-# Entries: 5665
-# Tag: github-feed:CN_IP:20261026233432
-# Generated at UTC: 2026-10-26T23:34:32.344637Z
+# Entries: 5666
+# Tag: github-feed:CN_IP:20261103020000
+# Generated at UTC: 2026-11-03T02:00:00.840287Z
 # ==================================================
 
 :local listName "CN_IP"
 :local tmpList "CN_IP__tmp"
 :local oldList "CN_IP__old"
-:local tag "github-feed:CN_IP:20261026233432"
+:local tag "github-feed:CN_IP:20261103020000"
 :local tagPrefix "github-feed:CN_IP:"
-:local newCount 5665
+:local newCount 5666
 
 :log warning ("Address-List: 开始更新 " . $listName . "，共 " . $newCount . " 条")
 
@@ -5276,6 +5276,7 @@
 /ip firewall address-list add list=$tmpList address="203.223.0.0/20" comment=$tag
 /ip firewall address-list add list=$tmpList address="203.223.16.0/24" comment=$tag
 /ip firewall address-list add list=$tmpList address="203.223.22.0/23" comment=$tag
+/ip firewall address-list add list=$tmpList address="206.109.70.0/23" comment=$tag
 /ip firewall address-list add list=$tmpList address="210.2.0.0/23" comment=$tag
 /ip firewall address-list add list=$tmpList address="210.2.2.0/24" comment=$tag
 /ip firewall address-list add list=$tmpList address="210.2.4.0/22" comment=$tag
