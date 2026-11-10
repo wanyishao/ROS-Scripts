@@ -4,14 +4,14 @@
 # Family: ipv4
 # Source: https://metowolf.github.io/iplist/data/country/CN.txt
 # Entries: 5666
-# Tag: github-feed:CN_IP:20261103020000
-# Generated at UTC: 2026-11-03T02:00:00.840287Z
+# Tag: github-feed:CN_IP:20261110023240
+# Generated at UTC: 2026-11-10T02:32:40.152708Z
 # ==================================================
 
 :local listName "CN_IP"
 :local tmpList "CN_IP__tmp"
 :local oldList "CN_IP__old"
-:local tag "github-feed:CN_IP:20261103020000"
+:local tag "github-feed:CN_IP:20261110023240"
 :local tagPrefix "github-feed:CN_IP:"
 :local newCount 5666
 
@@ -934,7 +934,7 @@
 /ip firewall address-list add list=$tmpList address="45.250.112.0/20" comment=$tag
 /ip firewall address-list add list=$tmpList address="45.250.128.0/20" comment=$tag
 /ip firewall address-list add list=$tmpList address="45.250.144.0/21" comment=$tag
-/ip firewall address-list add list=$tmpList address="45.250.154.0/23" comment=$tag
+/ip firewall address-list add list=$tmpList address="45.250.152.0/22" comment=$tag
 /ip firewall address-list add list=$tmpList address="45.250.164.0/22" comment=$tag
 /ip firewall address-list add list=$tmpList address="45.250.180.0/22" comment=$tag
 /ip firewall address-list add list=$tmpList address="45.250.184.0/21" comment=$tag
@@ -2148,7 +2148,7 @@
 /ip firewall address-list add list=$tmpList address="103.222.0.0/20" comment=$tag
 /ip firewall address-list add list=$tmpList address="103.222.16.0/22" comment=$tag
 /ip firewall address-list add list=$tmpList address="103.222.24.0/21" comment=$tag
-/ip firewall address-list add list=$tmpList address="103.222.33.0/24" comment=$tag
+/ip firewall address-list add list=$tmpList address="103.222.32.0/23" comment=$tag
 /ip firewall address-list add list=$tmpList address="103.222.36.0/22" comment=$tag
 /ip firewall address-list add list=$tmpList address="103.222.40.0/21" comment=$tag
 /ip firewall address-list add list=$tmpList address="103.222.48.0/20" comment=$tag
@@ -5174,7 +5174,7 @@
 /ip firewall address-list add list=$tmpList address="203.118.192.0/19" comment=$tag
 /ip firewall address-list add list=$tmpList address="203.118.241.0/24" comment=$tag
 /ip firewall address-list add list=$tmpList address="203.118.248.0/22" comment=$tag
-/ip firewall address-list add list=$tmpList address="203.119.24.0/23" comment=$tag
+/ip firewall address-list add list=$tmpList address="203.119.24.0/24" comment=$tag
 /ip firewall address-list add list=$tmpList address="203.119.32.0/24" comment=$tag
 /ip firewall address-list add list=$tmpList address="203.119.34.0/23" comment=$tag
 /ip firewall address-list add list=$tmpList address="203.119.80.0/22" comment=$tag
