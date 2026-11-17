@@ -3,17 +3,17 @@
 # List: 内蒙古IPV4段
 # Family: ipv4
 # Source: https://metowolf.github.io/iplist/data/cncity/150000.txt
-# Entries: 375
-# Tag: github-feed:内蒙古IPV4段:20261110023240
-# Generated at UTC: 2026-11-10T02:32:40.152708Z
+# Entries: 376
+# Tag: github-feed:内蒙古IPV4段:20261117024620
+# Generated at UTC: 2026-11-17T02:46:20.260206Z
 # ==================================================
 
 :local listName "内蒙古IPV4段"
 :local tmpList "内蒙古IPV4段__tmp"
 :local oldList "内蒙古IPV4段__old"
-:local tag "github-feed:内蒙古IPV4段:20261110023240"
+:local tag "github-feed:内蒙古IPV4段:20261117024620"
 :local tagPrefix "github-feed:内蒙古IPV4段:"
-:local newCount 375
+:local newCount 376
 
 :log warning ("Address-List: 开始更新 " . $listName . "，共 " . $newCount . " 条")
 
@@ -126,6 +126,7 @@
 /ip firewall address-list add list=$tmpList address="42.247.59.48/28" comment=$tag
 /ip firewall address-list add list=$tmpList address="42.247.59.192/27" comment=$tag
 /ip firewall address-list add list=$tmpList address="42.247.60.128/28" comment=$tag
+/ip firewall address-list add list=$tmpList address="43.180.32.0/19" comment=$tag
 /ip firewall address-list add list=$tmpList address="43.226.116.0/22" comment=$tag
 /ip firewall address-list add list=$tmpList address="43.240.220.0/22" comment=$tag
 /ip firewall address-list add list=$tmpList address="43.243.228.0/22" comment=$tag
